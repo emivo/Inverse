@@ -44,11 +44,12 @@ for iii = 1:16
 end
 % b)
 temp = convmtx(p',16);
-A = temp(:,(m+1):(end-m));
+A2 = temp(:,(m+1):(end-m));
 for iii = 1:m
-    A(1:m, end-m+1:end) = temp(1:m,1:m);
-    A((end-m+1):end,1:m) = temp((end-m+1):end,(end-m+1):end);
+    A2(1:m, end-m+1:end) = temp(1:m,1:m);
+    A2((end-m+1):end,1:m) = temp((end-m+1):end,(end-m+1):end);
 end
+convo2 = A2*f;
 % c) 
 shiftp = zeros(size(1:16))';
 shiftp(7:11) = p;
