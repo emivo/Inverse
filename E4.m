@@ -42,7 +42,7 @@ m_prime = [mn; zeros(n - 1, 1)];
 f_alphas0 = zeros(n, len);
 rsnes0 = zeros(len, 1); 
 m_prime0 = [mn; zeros(n + 1, 1)];
-%% Calculate könökeppi for each alpha
+%% Calculate kï¿½nï¿½keppi for each alpha
 for k = 1:len
     alpha = alphas(k);
 
